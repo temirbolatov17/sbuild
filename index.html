@@ -4,18 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sbuild company</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>SBuild company</title>
+
+    <link rel="preload" href="src/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="src/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin>
+
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <section class="wrapper">
+            <nav class="navigation">
+                <a href="#" class="navigation__logo">
+                    <img src="/src/img/icon.png" alt="Логотип Sbuild">
+                </a>
+            </nav>
+            <h1 class="title">SBuild Construction</h1>
+            <ul class="features">
+                <li class="features__item">
+                    Строительство
+                </li>
+                <li class="features__item">
+                    Проектирование
+                </li>
+                <li class="features__item">
+                    Инженерная продукция
+                </li>
+            </ul>
+            <div class="benefits">
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        Строительство и проектирование домов с индивидуальным подходом к каждому клинету.
+                    </li>
+                    <li class="benefits__item">
+                        Инженерные системы по вашему запросу.
+                    </li>
+                    <li class="benefits__item">
+                        Используем только качественные материалы. 
+                    </li>
+                    <li class="benefits__item benefits__item--slogan">
+                        Не забывая о прошлом, стремимся в будущее.
+                    </li>
+                </ul>
+            </div>
+        </section>
     </header>
-    <main>
-        <h1>Sbuild Construction</h1>
+    <main class="main">
+        <div class="wrapper">
+            <section class="projects">
+                <h2 class="section-title">Наши готовые проекты</h2>
+                <div class="projects__img">
+                    <picture>
+                        <img class="preview__image" width="703" height="527" src="/src/img/project1.jpg" srcset="/src/img/project1@2x.jpg 2x" alt="Газоблочный завод">
+                    </picture>
+                </div>
+                <div class="projects__description">
+                    <p class="projects__text">
+                        Цех по производству газобетонных блоков в г. Семей
+                        По запросу клиента был составлен и реализован проект цеха по производству газобетонных блоков. 
+                        С максимальной производительностью 480 блоков в день. Данный проект был реализован в 2021 году.
+                        На данный момент цех успешно функционирует.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="">
+
+            </section>
+        </div>
+        <section class="promotion">
+            <div class="wrapper">
+                <div class="promotion__text">
+                    <h2 class="promotion__title">Мы реализуем ваши самые смелые идеи</h2>
+                </div>
+                <div class="promotion__action">
+                    <button class="promotion__button">Ваш запрос</button>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="about">
+                <h2 class="section-title">Чем мы занимаемся?</h2>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <img class="about__logo" src="" alt="">
+                        <h3 class="about__title">Строительство офисных зданий</h3>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__logo" src="" alt="">
+                        <h3 class="about__title">Строительство частных домов</h3>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__logo" src="" alt="">
+                        <h3 class="about__title">Проектирование</h3>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__logo" src="" alt="">
+                        <h3 class="about__title">Монтаж инженерного оборудования</h3>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__logo" src="" alt="">
+                        <h3 class="about__title">Поставка инженерного оборудования</h3>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__logo" src="" alt="">
+                        <h3 class="about__title">Поставка газобетонных блоков</h3>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="promotion">
+            <div class="wrapper">
+                <div class="promotion__text">
+                    <h2 class="promotion__title">Хотите с нами работать?</h2>
+                    <p class="promotion__subtitle">Оставьте заявку и мы свяжемся с вами!</p>
+                </div>
+                <div class="promotion__action">
+                    <button class="promotion__button">Ваш запрос</button>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section class="contacts">
+                <div class="contacts__item">
+                    <img class="contacts__logo" src="" alt="">
+                    <h3 class="contacts__title">Адрес:</h3>
+                    <address>г. Семипалатинск<br>Богенбай батыра 1</address>
+                </div>
+                <div class="contacts__item">
+                    <img class="contacts__logo" src="" alt="">
+                    <h3 class="contacts__title">Телефон:</h3>
+                    <a class="contacts__tel" href="tel:+77769966188">8 (776) 996-61-88</a>
+                    <a class="contacts__tel" href="tel:+77027826073">8 (702) 782-60-73</a>
+                </div>
+                <div class="contacts__item">
+                    <img class="contacts__logo" src="" alt="">
+                    <h3 class="contacts__title">Время работы:</h3>
+                    <p class="contacts__text">пн-сб</p>
+                    <p class="contacts__text">10:00 - 20:00</p>
+                </div>
+                <div class="contacts__item">
+                    <img class="contacts__logo" src="" alt="">
+                    <h3 class="contacts__title">e-mail:</h3>
+                    <a href="mailto:sbuildconst@gmail.com">sbuildconst@gmail.com</a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-
+        <div class="wrapper">
+            <p>2022 SBuild Construction</p>
+        </div>
     </footer>
 </body>
 </html>
