@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBuild company</title>
+    <meta name="description" content="Строительство и проектирование, инженерная продукция. Кондиционеры с доставкой по всему Казахстану">
+    <meta property="og:title" content="SemBuild">
+    <meta property="og:site_name" content="sembuild">
+    <meta property="og:url" content="sembuild.kz">
+    <meta property="og:description" content="Строительство и проектирование, инженерная продукция. Кондиционеры с доставкой по всему Казахстану">
+    <meta property="og:image" content="/src/img/icon.png">
+    <title>SemBuild</title>
 
     <link rel="preload" href="src/fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
     <link rel="preload" href="src/fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
     <link rel="stylesheet" href="normalize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -17,10 +28,10 @@
         <section class="wrapper">
             <nav class="navigation">
                 <a href="#" class="navigation__logo">
-                    <img src="/src/img/icon.png" alt="Логотип Sbuild">
+                    <img class="logo" src="/src/img/icon.png" width="60" height="60" alt="Логотип Sembuild">
                 </a>
             </nav>
-            <h1 class="title">SBuild Construction</h1>
+            <h1 class="title">SemBuild</h1>
             <ul class="features">
                 <li class="features__item">
                     Строительство
@@ -54,27 +65,24 @@
         <div class="wrapper">
             <section class="projects">
                 <h2 class="section-title">Наши готовые проекты</h2>
-                <div class="projects__img">
-                    <picture>
-                        <img class="preview__image" width="703" height="527" src="/src/img/project1.jpg" srcset="/src/img/project1@2x.jpg 2x" alt="Газоблочный завод">
-                    </picture>
-                </div>
                 <div class="projects__description">
+                    <div class="projects__img">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/src/img/project1.jpg 1x, /src/img/project1@2x.jpg 2x">
+                            <img class="preview__image" width="280" height="150" src="/src/img/project1.jpg" srcset="/src/img/project1@2x.jpg 2x" alt="Газоблочный завод">
+                        </picture>
+                    </div>
                     <p class="projects__text">
-                        Цех по производству газобетонных блоков в г. Семей
+                        Цех по производству газобетонных блоков в г. Семей.
                         По запросу клиента был составлен и реализован проект цеха по производству газобетонных блоков. 
                         С максимальной производительностью 480 блоков в день. Данный проект был реализован в 2021 году.
                         На данный момент цех успешно функционирует.
                     </p>
                 </div>
             </section>
-            
-            <section class="">
-
-            </section>
         </div>
         <section class="promotion">
-            <div class="wrapper">
+            <div class="wrapper promotion__wrapper">
                 <div class="promotion__text">
                     <h2 class="promotion__title">Мы реализуем ваши самые смелые идеи</h2>
                 </div>
@@ -88,36 +96,36 @@
                 <h2 class="section-title">Чем мы занимаемся?</h2>
                 <ul class="about__list">
                     <li class="about__item">
-                        <img class="about__logo" src="" alt="">
+                        <img class="about__logo" src="/src/img/hotel.svg" height="100" width="100" alt="building icon">
                         <h3 class="about__title">Строительство офисных зданий</h3>
                     </li>
                     <li class="about__item">
-                        <img class="about__logo" src="" alt="">
+                        <img class="about__logo" src="/src/img/crane.svg" height="100" width="100" alt="crane icon">
                         <h3 class="about__title">Строительство частных домов</h3>
                     </li>
                     <li class="about__item">
-                        <img class="about__logo" src="" alt="">
+                        <img class="about__logo" src="/src/img/sketch.svg" height="100" width="100" alt="sketch icon">
                         <h3 class="about__title">Проектирование</h3>
                     </li>
                     <li class="about__item">
-                        <img class="about__logo" src="" alt="">
+                        <img class="about__logo" src="/src/img/pipeline.svg" height="100" width="100" alt="pipeline icon">
                         <h3 class="about__title">Монтаж инженерного оборудования</h3>
                     </li>
                     <li class="about__item">
-                        <img class="about__logo" src="" alt="">
+                        <img class="about__logo" src="/src/img/air-conditioner.svg" height="100" width="100" alt="conditioner icon">
                         <h3 class="about__title">Поставка инженерного оборудования</h3>
                     </li>
                     <li class="about__item">
-                        <img class="about__logo" src="" alt="">
+                        <img class="about__logo" src="/src/img/lego.svg" height="100" width="100" alt="lego icon">
                         <h3 class="about__title">Поставка газобетонных блоков</h3>
                     </li>
                 </ul>
             </section>
         </div>
         <section class="promotion">
-            <div class="wrapper">
+            <div class="wrapper promotion__wrapper">
                 <div class="promotion__text">
-                    <h2 class="promotion__title">Хотите с нами работать?</h2>
+                    <h2 class="promotion__title promotion__title--uppercase">Хотите с нами работать?</h2>
                     <p class="promotion__subtitle">Оставьте заявку и мы свяжемся с вами!</p>
                 </div>
                 <div class="promotion__action">
@@ -126,36 +134,66 @@
             </div>
         </section>
         <div class="wrapper">
+            <h2 class="section-title">Контакты</h2>
             <section class="contacts">
                 <div class="contacts__item">
-                    <img class="contacts__logo" src="" alt="">
+                    <img class="contacts__logo" src="./src/img/address.svg" width="60" height="60" alt="">
                     <h3 class="contacts__title">Адрес:</h3>
-                    <address>г. Семипалатинск<br>Богенбай батыра 1</address>
+                    <address class="contacts__address">г. Нур-Султан<br>Жетиген 27а, 205 каб.</address>
                 </div>
                 <div class="contacts__item">
-                    <img class="contacts__logo" src="" alt="">
+                    <img class="contacts__logo" src="./src/img/address.svg" width="60" height="60" alt="">
+                    <h3 class="contacts__title">Адрес:</h3>
+                    <address class="contacts__address">г. Семей<br>Богенбай батыра 1</address>
+                </div>
+                <div class="contacts__item">
+                    <img class="contacts__logo" src="./src/img/tel.svg" width="60" height="60" alt="">
                     <h3 class="contacts__title">Телефон:</h3>
                     <a class="contacts__tel" href="tel:+77769966188">8 (776) 996-61-88</a>
                     <a class="contacts__tel" href="tel:+77027826073">8 (702) 782-60-73</a>
                 </div>
                 <div class="contacts__item">
-                    <img class="contacts__logo" src="" alt="">
+                    <img class="contacts__logo" src="./src/img/time.svg" width="60" height="60" alt="">
                     <h3 class="contacts__title">Время работы:</h3>
-                    <p class="contacts__text">пн-сб</p>
-                    <p class="contacts__text">10:00 - 20:00</p>
+                    <p class="contacts__text">пн-пт</p>
+                    <p class="contacts__text">9:00 - 18:00</p>
                 </div>
                 <div class="contacts__item">
-                    <img class="contacts__logo" src="" alt="">
+                    <img class="contacts__logo" src="./src/img/mail.svg" width="60" height="60" alt="">
                     <h3 class="contacts__title">e-mail:</h3>
-                    <a href="mailto:sbuildconst@gmail.com">sbuildconst@gmail.com</a>
+                    <a class="contacts__email" href="mailto:sembuildut@gmail.com">sembuildut@gmail.com</a>
                 </div>
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="wrapper">
-            <p>2022 SBuild Construction</p>
+            <p class="footer__text">&#169; 2022 SemBuild Construction</p>
         </div>
     </footer>
+    <section class="modal modal--closed">
+        <div class="modal-container">
+            <h2 class="visually-hidden">Форма отправки письма</h2>
+            <form class="feedback-form" id="form" action="#" method="POST">
+            <p class="input-name-container">
+                <label for="input-name">Ваше имя:</label><br>
+                <input class="input-name _req" type="text" name='name' id="input-name" placeholder="Имя Фамилия" required>
+            </p>
+            <p class="input-email-container">
+                <label for="input-email">Ваш e-mail:</label><br>
+                <input class="input-email _email _req" type="text" name="email" id="input-email" placeholder="email@example.com" required>
+            </p>
+            <p class="input-feedback-container">
+                <label for="input-tel" class="form__label">Телефон*:</label>
+                <input class="input-tel _tel _req" id="input-tel" name="tel" type="tel" required placeholder="+77771234567">
+            </p>
+            <div class="modal-button-bg">
+                <button class="modal-button" type="submit">Отправить</button>
+            </div>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+            </form>
+        </div>
+    </section>
+    <script src="/js/script.js"></script>
 </body>
 </html>
