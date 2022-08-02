@@ -28,7 +28,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; 
   $mail->Username   = 'sembuildut@gmail.com'; 
-  $mail->Password   = 'ohesaooxdrtvbzoy'; 
+  $mail->Password   = ''; 
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
